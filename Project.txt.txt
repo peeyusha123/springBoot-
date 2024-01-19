@@ -365,7 +365,23 @@ public class User {
 
 
 
-updated...
+updated
+
+
+
+# Fuze DB Configuration
+spring.datasource.DataServiceAdapterType=oracle
+spring.datasource.boot.datasource_pool=jdbc/fuze_oracle_ds
+spring.datasource.boot.datasource_pool_driver_class=oracle.jdbc.driver.OracleDriver
+spring.datasource.boot.datasource_pool_url=jdbc:oracle:thin:@fuze-offshore-oracle-dit.csa9auzq3toz.us-east-1.rds.amazonaws.com:1521:fuze
+spring.datasource.boot.datasource_pool_user=fuze
+spring.datasource.boot.datasource_pool_passwd=Fuzedevoct!2020#
+spring.datasource.C3P0_MAX_IDLE_TIME=1800
+spring.datasource.C3P0_MAX_CONNECTION_AGE=7200
+spring.datasource.C3P0_MAX_STATEMENTS_PER_CONNECTION=100
+spring.datasource.ESPRESSO_MODE=DEV
+
+
 
 # Fuze DB Configuration
 DataServiceAdapterType=oracle
