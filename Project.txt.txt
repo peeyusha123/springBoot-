@@ -362,3 +362,19 @@ public class User {
                 '}';
     }
 }
+
+
+
+updated...
+
+# Fuze DB Configuration
+DataServiceAdapterType=oracle
+boot.datasource_pool=jdbc/fuze_oracle_ds
+boot.datasource_pool_driver_class=oracle.jdbc.driver.OracleDriver
+boot.datasource_pool_url=jdbc:oracle:thin:@fuze-offshore-oracle-dit.csa9auzq3toz.us-east-1.rds.amazonaws.com:1521:fuze
+boot.datasource_pool_user=fuze
+boot.datasource_pool_passwd=Fuzedevoct!2020#
+C3P0_MAX_IDLE_TIME=1800
+C3P0_MAX_CONNECTION_AGE=7200
+C3P0_MAX_STATEMENTS_PER_CONNECTION=100
+ESPRESSO_MODE=DEV
