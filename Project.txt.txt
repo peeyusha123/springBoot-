@@ -1,3 +1,4 @@
+
 package com.yourpackage.controller;
 
 import com.yourpackage.model.User;
@@ -269,3 +270,36 @@ public class UserDao {
     </build>
 
 </project>
+
+
+//application.properties
+
+
+# DataSource Configuration
+spring.datasource.url=jdbc:oracle:thin:@fuze-offshore-oracle-dit.csa9auzq3toz.us-east-1.rds.amazonaws.com:1521:fuze
+spring.datasource.username=fuze
+spring.datasource.password=Fuzedevoct!2020#
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+
+# C3P0 Connection Pool Configuration
+spring.datasource.hikari.maximum-pool-size=5
+spring.datasource.hikari.minimum-idle=1
+spring.datasource.hikari.idle-timeout=1800
+spring.datasource.hikari.max-lifetime=7200
+spring.datasource.hikari.connection-test-query=SELECT 1 FROM DUAL
+
+# JPA Configuration
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+# Fuze DB Configuration
+DataServiceAdapterType=oracle
+boot.datasource_pool=jdbc/fuze_oracle_ds
+boot_datasource_pool_driver_class=oracle.jdbc.driver.OracleDriver
+boot_datasource_pool_url=jdbc:oracle:thin:@fuze-offshore-oracle-dit.csa9auzq3toz.us-east-1.rds.amazonaws.com:1521:fuze
+boot_datasource_pool_user=fuze
+boot_datasource_pool_passwd=Fuzedevoct!2020#
+C3P0_MAX_IDLE_TIME=1800
+C3P0_MAX_CONNECTION_AGE=7200
+C3P0_MAX_STATEMENTS_PER_CONNECTION=100
+ESPRESSO_MODE=DEV
